@@ -26,6 +26,7 @@ bool checkPalindrome(string s,int i, int j){
         return true;
     }
 int main(){
-
-return 0;
+        string s[100] = "noon";
+        cout << "is palindrome: " << validPalindrome(s) << endl;
+        return 0;
 }

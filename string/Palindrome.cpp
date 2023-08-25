@@ -21,7 +21,7 @@ bool checkPalindrome(char word[]){
 }
 
 int main(){
-char word[100]="nOON";
+char word[100]="noon";
 cout<<"is palindrome: "<<checkPalindrome(word)<<endl;
 return 0;
 }
