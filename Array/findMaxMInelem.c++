@@ -18,7 +18,7 @@ int findMinAndMax(int arr[],int n){
 }
 int main(){
 int arr[]={6,2,3,4,1,9};
-int n = sizeof(arr)/sizeof(arr[0]);
+int n = sizeof(arr)/sizeof(int);
 findMinAndMax(arr,n);
 return 0;
 }

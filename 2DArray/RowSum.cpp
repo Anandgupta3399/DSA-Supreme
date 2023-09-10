@@ -61,16 +61,16 @@ for(int i=0; i<rows; i++){
     }
    cout<<endl;
 }
-// PrintRowSum(arr,rows,cols);
-// int key =44; 
-// if(findKey(arr,rows,cols,key)){
-//     cout<<"true";
-// }
-// else{
-//     cout<<"false";
-// }
-int ans=getMini(arr,rows,cols);
-cout<<"mini is "<<ans<<endl;
- cout<<"maxi is " <<getMaxi(arr,rows,cols)<<endl;
+ PrintRowSum(arr,rows,cols);
+// // int key =44; 
+// // if(findKey(arr,rows,cols,key)){
+// //     cout<<"true";
+// // }
+// // else{
+// //     cout<<"false";
+// // }
+// int ans=getMini(arr,rows,cols);
+// cout<<"mini is "<<ans<<endl;
+//  cout<<"maxi is " <<getMaxi(arr,rows,cols)<<endl;
 return 0;
 }

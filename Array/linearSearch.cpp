@@ -18,11 +18,13 @@ cout<<"which no you want to find"<<endl;
 int key;
 cin>>key;
 
-if(find(arr,size,key)){
-    cout<<"Found"<<endl;
-}
-else{
-    cout<<"Not Found"<<endl;
-}
+bool ans = (arr, size, key);
+cout << ans;
+// if(find(arr,size,key)){
+//     cout<<"Found"<<endl;
+// }
+// else{
+//     cout<<"Not Found"<<endl;
+// }
 return 0;
 }

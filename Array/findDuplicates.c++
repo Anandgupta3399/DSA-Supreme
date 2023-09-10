@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 int findDuplicate(vector<int> &arr){
     int ans =0;
