@@ -14,9 +14,9 @@ int main(){
 int arr[6]={1,3,5,6,2,4};
 int size=6;
 
-cout<<"which no you want to find"<<endl;
-int key;
-cin>>key;
+//cout<<"which no you want to find"<<endl;
+int key=5;
+//cin>>key;
 
 bool ans = (arr, size, key);
 cout << ans;

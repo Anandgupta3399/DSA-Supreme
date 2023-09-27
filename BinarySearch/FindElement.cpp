@@ -34,18 +34,18 @@ int main(){
 // int indexOftarget=binarySearch(arr,size,target);
 
 // if(indexOftarget==-1){
-//     cout<<"target not found"<<endl;
+//     cout<<"target not found "<<endl;
 // }
 // else{
-//     cout<<"target found at "<<indexOftarget <<"index " <<endl;
+//     cout<<"target found at "<<indexOftarget <<" index " <<endl;
 // }
 
   vector<int> v{1,2,3,4,5,6};
-  int arr[] = {1,2,3,4,5,6,7 };
+  int arr[] = {1,2,3,4,5,6,7,8 };
   int size = 9;
 
-  // if(binary_search(arr, arr + size, 6)) 
-    if(binary_search(v.begin(),v.end(),7)) 
+  if(binary_search(arr, arr + size, 9)) 
+  // if(binary_search(v.begin(),v.end(),8)) 
 
   {
     cout << "Found" << endl;

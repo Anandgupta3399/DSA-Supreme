@@ -117,6 +117,53 @@ int height(Node *root)
     int ans = max(leftHeight, rightHeight) + 1;
     return ans;
 }
+void inOrderTraversal(Node *root)
+{
+    // base
+    if (root == NULL)
+            return;
+
+    // LNR
+    inOrderTraversal(root->left);
+    cout << root->data << " ";
+    inOrderTraversal(root->right);
+}
+
+void preOrderTraversal(Node *root)
+{
+    // base case
+    if (root == NULL)
+    {
+            return;
+    }
+    // NLR
+    cout << root->data << " ";
+    preOrderTraversal(root->left);
+    preOrderTraversal(root->right);
+}
+
+void postorderTraversal(Node *root)
+{
+    if (root == NULL)
+            return;
+
+    // LRN
+    postorderTraversal(root->left);
+    postorderTraversal(root->right);
+    cout << root->data << " ";
+}
+
+int height(Node *root)
+{
+    if (root == NULL)
+            return 0;
+
+    int leftHeight = height(root->left);
+    int rightHeight = height
+    (root->right);
+    int ans = max(leftHeight, rightHeight) + 1;
+    return ans;
+}
 
 int main(){
        Node *root = NULL;

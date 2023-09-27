@@ -3,26 +3,30 @@
 #include<cmath>
 using namespace std;
 
-int sqrtInt(int n){
-    int s=0;
-    int e=n;
-    int mid = s + (e-s)/2;
+int findSqrt(int n){
+    int target = n;
+    int s = 0;
+    int e = n;
+    int mid = s + (e - s) / 2;
     int ans = -1;
 
     while(s<=e){
-        long long prod = mid*mid;
-        if(prod==n)
+        if(mid*mid == target){
             return mid;
-        else if(prod<n){
-            ans = mid;
-            s = mid+1;
         }
-        else
+        if(mid*mid>target){
             e = mid - 1;
-        mid = s + (e-s)/2;
+        }
+        else{
+            ans = mid;
+            s = mid + 1;
+        }
+        mid = s + (e - s) / 2;
     }
-    return ans;
+    return ans; 
 }
+
+
 
 double sqrtDouble(double n, int precision){
     int ans = sqrt(n);
@@ -42,20 +46,23 @@ double sqrtDouble(double n, int precision){
 
 int main(){
 
-    // // sqrt of an int number
-    //     int n;
-    //     cin>>n;
-    //     int ans = sqrtInt(n);
-    //     cout<<ans<<'\n';
+    int n;
+    cout << "Enter The Number " << endl;
+    cin >> n;
+
+    int ans = findSqrt(n);
+    cout << "Sqrt of " << n << " is " << ans<<endl;
+
+
     
 
     //sqrt of an double number upto given precision
-        double n;
-        cin>>n;
-        int precision;
-        cin>>precision;
-        double ans = sqrtDouble(n, precision);
-        cout<<ans<<'\n';
+        // double n;
+        // cin>>n;
+        // int precision;
+        // cin>>precision;
+        // double ans = sqrtDouble(n, precision);
+        // cout<<ans<<'\n';
     
 
     /*// using inbuilt sqrt function
@@ -67,13 +74,3 @@ int main(){
     return 0;
 }
 
-/*INPUTS
-// sqrt of an int number
-35
-
-// sqrt of an double number upto given precision
-35 6
-
-// using inbuilt sqrt function
-35
-*/

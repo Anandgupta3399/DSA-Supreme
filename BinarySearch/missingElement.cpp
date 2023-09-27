@@ -28,20 +28,12 @@ int missingElement(vector<int>arr){
 
 int main(){
 
-    int n;
-    cin>>n;
-    vector<int>arr(n);
-    for(int i=0; i<n; i++){
-        cin>>arr[i];
-    }
+    
+    vector<int>arr{1,2,4,5,6,7,8,9};
+  
 
     int ans = missingElement(arr);
     cout << ans << '\n';
 
     return 0;
 }
-
-/*INPUTS
-10
-1 2 3 4 6 7 8 9 10 11
-*/

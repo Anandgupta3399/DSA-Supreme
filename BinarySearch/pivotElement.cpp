@@ -11,7 +11,7 @@ int FindPivot(vector<int>arr){
         if(s==e){
             return s;
         }
-        if( mid+1<e && arr[mid]>arr[mid+1]){
+        if( mid+1<=e && arr[mid]>arr[mid+1]){
             return mid;
         }
          if( mid-1>=s && arr[mid-1]>arr[mid]){
@@ -35,6 +35,7 @@ int main(){
 vector<int>v{1,3};
 
 int ans = FindPivot(v);
-cout<<"ans is "<<ans<<endl;
+cout<<"index is "<<ans<<endl;
+cout << "value is " << v[ans] << endl;
 return 0;
 }
